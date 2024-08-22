@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Avionsalonu</title>
+    <meta charset="UTF-8" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Avionsalonu/scss/custome.css" />
+  </head>
+  <body>
+
+    
+    <!-- Rozevírací seznam - město -->
+    <div class="container">
+
+      
+      <h1>Avionsalon</h1>
+      <div class="container-fluid my-2 mx-2 p-3">
+        
+        
+        <div class="seznam">        
+          <label for="ticket-select">Zvolte letenku:</label>
+          <select class="form-select" aria-label="ticket-select" id="ticket-select">
+              <option selected>Prosím vyberte jednu z možností:</option>
+              <option value="500">Praha 500 Kč</option>
+              <option value="3000">Frankfurt 3000 Kč</option>
+              <option value="15000">New York 15000 Kč</option>
+              <option value="30000">Sydney 30000 Kč</option>
+          </select>
+        </div>
+        <!-- Rozevírací seznam - počet letenek -->
+        <div class="seznam">
+
+          <label for="ticketnum-select">Počet letenek:</label>
+          <select class="form-select" aria-label="ticketnum" id="ticketnum-select">
+              <option selected>Prosím vyberte jednu z možností:</option>
+              <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+
+        </div>
+        <!-- CheckBox - zpáteční letenka -->
+        <div class="checkbox">
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="returnticket" value="2"
+            checked>
+            <label class="form-check-label" for="flexCheckDefault">
+              Zakoupit zpáteční letenku
+            </label>
+          </div>
+        </div>
+
+        <!-- RadioButtons - class -->
+
+      
+        <div class="radiobuttons">
+
+          <label class="headline">
+            Zvolte typ letenky:
+          </label>
+          <div class="radiobuttonsboder">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="class" id="economy" value="1" checked>
+              <label class="form-check-label" for="economy">
+                Economy class - bez přirážky
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="class" id="business" value="1.25">
+              <label class="form-check-label" for="business">
+                Business class - + 25 procent k ceně
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="class" id="business" value="1.5">
+              <label class="form-check-label" for="royal">
+                Royal class - + 50 procent k ceně
+              </label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Div,Input,Button - výsledná cena -->
+
+        <div class="container-fluid my-2 mx-2 p-3">
+  
+          <div class="totalcostborder">
+            <p id="totalcost">Výsledná cena:</p>
+          </div>
+
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Zadejte množství peněz:" aria-label="ClientsFounds" aria-describedby="ClientsFounds" id="funds" minlength="1" maxlength="8">
+            <button class="btn btn-outline-secondary"  type="button" id="btn-compare">Button</button>
+          </div>
+
+
+
+        <div>
+          <p id="clientResult"></p>
+        </div>
+
+        <!-- TextArea - poznámka -->
+        <div class="mb-3">
+          <label for="poznamka" class="form-label">Poznámka:</label>
+          <textarea class="form-control" id="poznamka" rows="10" cols="40" placeholder="Poznámka"></textarea>
+        </div>
+
+      </div>
+
+
+    <!-- script.js -->
+    <script src="script.js"></script>
+    <!-- -------------------------------- -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <footer>
+      <div class="foot">
+        <div>©Tomášek 2024</div>
+      </div>
+    </footer>
+  </body>
+</html>
