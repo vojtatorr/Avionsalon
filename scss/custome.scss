@@ -1,0 +1,123 @@
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  color: white;
+  background-image: url("../img/bg.jpg");
+  background-size: cover; /* Ensures the image covers the whole page */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  background-position: center; /* Centers the image */
+}
+
+.foot {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.container-fluid {
+  color: white;
+  background-image: url("../img/block-bg.jpg");
+  background-size: cover; /* Ensures the image covers the whole page */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  background-position: center; /* Centers the image */
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.checkbox label {
+  font-size: 1.5rem;
+}
+
+.form-check {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+}
+
+fieldset {
+  display: inline-flex; /* Align elements inline */
+  align-items: center; /* Vertically center the legend and checkbox */
+  border: none; /* Remove the default border of the fieldset */
+  padding: 0; /* Remove padding around the fieldset */
+}
+
+legend,
+.seznam label {
+  font-size: 1.5rem;
+}
+
+.checkbox legend {
+  margin: 0; /* Remove any default margin */
+  padding-right: 10px; /* Space between legend and checkbox */
+}
+
+.checkbox label {
+  margin-left: 5px; /* Space between checkbox and label text */
+}
+
+.checkbox {
+  margin-bottom: 1rem; /* Space between form elements */
+}
+
+.seznam {
+  display: flex;
+  align-items: center; /* Vertically center the label and select */
+  margin-bottom: 1rem; /* Space between form elements */
+}
+
+.seznam label {
+  margin-right: 1rem; /* Space between label and select */
+  white-space: nowrap; /* Prevent label text from wrapping */
+}
+
+.seznam .form-select {
+  max-width: 400px; /* Limit the width of the select dropdown */
+}
+
+.radiobuttonsboder {
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px; /* Optional: rounded corners for a smoother look */
+  padding: 10px; /* Space between the border and the content */
+  margin-bottom: 1rem; /* Space below the container */
+}
+
+.headline {
+  font-size: 1.5rem;
+  margin-bottom: 1rem; /* Space below the headline */
+  display: block; /* Ensure headline is on its own line */
+}
+
+.form-check {
+  margin-bottom: 0.5rem; /* Space between each radio button */
+}
+
+.form-check-input {
+  margin-right: 0.5rem; /* Space between the radio button and label */
+}
+
+.totalcostborder {
+  align-items: center;
+  text-align: left;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px; /* Optional: rounded corners for a smoother look */
+  margin-bottom: 1rem; /* Space below the container */
+  background-color: white;
+  color: black;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+}
+
+// Then add additional custom code here
